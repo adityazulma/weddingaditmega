@@ -1,0 +1,95 @@
+/*---------------------
+  Gallery
+-----------------------*/
+.filter__control {
+    text-align: center;
+    margin-bottom: 30px;
+
+    li {
+        list-style: none;
+        font-size: 15px;
+        color: #b5b5b5;
+        display: inline-block;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-right: 55px;
+        position: relative;
+        cursor: pointer;
+
+        &:after {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 2px;
+            width: 100%;
+            background: $primary-color;
+            content: "";
+            opacity: 0;
+        }
+
+        &.active {
+            color: $heading-color;
+
+            &:after {
+                opacity: 1;
+            }
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.gallery__item {
+    height: 370px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+
+    &:hover {
+
+        .gallery__text {
+            bottom: 0;
+            opacity: 1;
+        }
+    }
+
+    .gallery__text {
+        background: rgba(53, 53, 53, 0.7);
+        padding: 16px 20px 15px;
+        border-radius: 0 0 5px 5px;
+        position: absolute;
+        left: 0;
+        bottom: -200px;
+        width: 100%;
+        opacity: 0;
+        @include transition(all, .6s);
+
+        h5 {
+            font-size: 20px;
+            color: $white-color;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        span {
+            font-size: 13px;
+            color: $white-color;
+            font-weight: 500;
+            text-transform: uppercase;
+            font-family: 'Work Sans', sans-serif;
+        }
+    }
+}
+
+.view__all {
+    padding-top: 20px;
+
+    .primary-btn {
+        border: 1px solid $primary-color;
+        color: $heading-color;
+        background: transparent;
+    }
+}

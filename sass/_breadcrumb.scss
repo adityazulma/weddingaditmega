@@ -1,0 +1,32 @@
+/*---------------------
+  Breadcrumb
+-----------------------*/
+.breadcrumb-option {
+    padding-top: 140px;
+    padding-bottom: 140px;
+
+    &.blog-details-breadcrumb {
+
+        .section-title {
+            margin-bottom: 0;
+
+            h2 {
+                margin-bottom: 0;
+                line-height: 50px;
+            }
+        }
+    }
+
+    .section-title {
+        margin-bottom: 0;
+
+        h2 {
+            color: $white-color;
+            font-size: 40px;
+        }
+
+        p {
+            color: $white-color;
+        }
+    }
+}

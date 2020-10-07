@@ -1,0 +1,269 @@
+
+/*--------------------------------- Responsive Media Quaries -----------------------------*/
+@media only screen and (min-width: 1200px) {
+    .container {
+      max-width: 1170px;
+    }
+  }
+  
+  /* Medium Device = 1200px */
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .story__item {
+      padding-top: 60px;
+    }
+  
+    .story__timeline__content:after {
+      height: 1015px;
+    }
+  }
+  
+  /* Tablet Device = 768px */
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .header__menu ul li {
+      margin-right: 30px;
+    }
+  
+    .hero {
+      margin: 0 15px;
+    }
+  
+    .story {
+  
+      img {
+        margin-bottom: 40px;
+      }
+    }
+  
+    .story__item {
+      padding-top: 0;
+      margin-bottom: 40px;
+    }
+  
+    .gallery {
+      margin: 0;
+    }
+  
+    .rsvp__form {
+      padding: 60px 35px 60px;
+    }
+  
+    .rsvp__text {
+      padding-top: 150px;
+      padding-left: 0;
+    }
+  
+    .story__inside__pic {
+      padding-top: 0;
+      margin-bottom: 40px;
+    }
+  
+    .blog__widget .blog__widget__social {
+      text-align: center;
+    }
+    .services__item {
+      padding: 35px 15px 30px;
+    }
+  }
+  
+  /* Wide Mobile = 480px */
+  @media only screen and (max-width: 767px) {
+    .hero {
+      margin: 0 15px;
+    }
+
+    .hero__text h2 {
+      font-size: 50px;
+    }
+  
+    .story__large__pic {
+      margin-bottom: 40px;
+    }
+  
+    .story__item {
+      padding-top: 0;
+      margin-bottom: 40px;
+    }
+  
+    .countdown__item {
+      margin-right: 0;
+      width: 50%;
+      float: left;
+      margin-bottom: 20px;
+  
+      &::after {
+        display: none;
+      }
+    }
+  
+    .gallery {
+      margin: 0;
+    }
+  
+    .rsvp {
+      height: auto;
+    }
+  
+    .rsvp__text {
+      padding-top: 40px;
+      padding-left: 0;
+      padding-bottom: 80px;
+    }
+  
+    .rsvp__form {
+      margin-bottom: 0;
+    }
+  
+    .story__inside__pic {
+      padding-top: 0;
+      margin-bottom: 40px;
+    }
+  
+    .story__timeline__item__date {
+      position: relative;
+      right: 0;
+      top: 0;
+    }
+  
+    .story__timeline__item__right .story__timeline__item__date {
+      left: 0;
+      right: 0;
+      margin-bottom: 20px;
+    }
+  
+    .story__timeline__content:after {
+      display: none;
+    }
+  
+    .story__timeline__item__text h3:after {
+      display: none;
+    }
+  
+    .story__timeline__item {
+      padding-right: 15px;
+    }
+  
+    .story__timeline__item__right {
+      padding-left: 15px;
+    }
+  
+    .filter__control li {
+      margin-right: 25px;
+    }
+  
+    .rsvp__page__form::before {
+      display: none;
+    }
+  
+    .rsvp__page__form::after {
+      display: none;
+    }
+  
+    .map iframe {
+      padding: 0;
+    }
+  
+    .blog__widget {
+  
+      ul {
+        text-align: center;
+        margin-bottom: 10px;
+      }
+  
+      p {
+        text-align: center;
+        margin-bottom: 10px;
+      }
+  
+      .blog__widget__social {
+        text-align: center;
+      }
+    }
+  
+    #mobile-menu-wrap {
+      display: inline-block;
+    }
+  
+    .slicknav_menu {
+      background: transparent;
+      margin-left: 10px;
+      display: block;
+    }
+  
+    .slicknav_nav {
+      text-align: left;
+      background: #222;
+      position: absolute;
+      width: 100%;
+      left: 0;
+      z-index: 9;
+    }
+  
+    .slicknav_nav ul {
+      margin: 10px 0;
+    }
+  
+    .slicknav_nav .slicknav_row,
+    .slicknav_nav a {
+      padding: 14px 31px;
+      margin: 0;
+    }
+  
+    .slicknav_nav a:hover {
+      border-radius: 0;
+      background: transparent;
+      color: $primary-color;
+    }
+  
+    .slicknav_nav .slicknav_row:hover {
+      border-radius: 0;
+      background: transparent;
+      color: $primary-color;
+    }
+  
+    .slicknav_btn {
+      margin: 0;
+      border-radius: 0;
+      display: inline-block;
+      float: none;
+      padding: 10px 12px 7px;
+    }
+  
+    .header__menu {
+      display: none;
+    }
+  
+    .header__logo {
+      margin-bottom: 30px;
+    }
+  
+    .rsvp-page {
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
+  }
+  
+  /* Small Device = 320px */
+  @media only screen and (max-width: 479px) {
+    .hero__text h2 {
+      font-size: 45px;
+    }
+    .guestbook__form {
+      padding: 40px 30px;
+    }
+  
+    .filter__control li {
+      margin-right: 5px;
+      margin-bottom: 5px;
+    }
+  
+    .rsvp__form {
+      padding: 80px 30px 60px;
+    }
+    .search-model-form input {
+      width: 100%;
+      font-size: 24px;
+    }
+    .services__item {
+      padding: 35px 20px 30px;
+    }
+  }
